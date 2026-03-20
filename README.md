@@ -1,62 +1,131 @@
-# Flutter Task App
+# Tasker App
 
-This is a modern and visually appealing task management application built with Flutter. It provides a seamless user experience for managing tasks, with features like authentication, pagination, search, and filtering.
+A beautifully designed, full-stack task management application built with Flutter for the frontend and a powerful Node.js (Express) backend. This project showcases a modern, feature-rich mobile application with a focus on user experience, performance, and clean architecture.
 
-## Features
+## Overview
 
-- **User Authentication:** Secure user authentication with email and password.
-- **Task Management:** Create, view, update, and delete tasks.
-- **Modern UI:** A beautiful and intuitive user interface with light and dark themes.
-- **Pagination:** Infinite scrolling for the task list, loading tasks on demand.
-- **Pull-to-Refresh:** Easily refresh the task list.
-- **Search and Filtering:** Quickly find tasks with search and filtering options.
-- **Animations:** Smooth animations using Lottie for a more engaging user experience.
+This repository contains two main parts:
 
-## Screenshots
+1.  **Flutter Application (`/`)**: A cross-platform mobile app for Android, iOS, and Web.
+2.  **Node.js Backend (`/backend`)**: A robust REST API server to handle data persistence and business logic.
 
-| Light Mode | Dark Mode |
-| :---: | :---: |
-| ![Light Mode Screenshot](https_www.macstories.net/wp-content/uploads/2019/08/Reminders-on-iOS-13-and-iPadOS-13-Everything-You-Need-to-Know-MacStories-1-1674507119253.jpg) | ![Dark Mode Screenshot](https_9to5mac.com/wp-content/uploads/sites/6/2022/01/reminders-app-redesigned.jpg?quality=82&strip=all&w=1600) |
+## ✨ Features
 
-## Getting Started
+- **Full-Stack Architecture**: Seamless integration between the Flutter frontend and a Node.js backend.
+- **User Authentication**: Secure JWT-based authentication for user registration and login.
+- **CRUD Operations**: Create, Read, Update, and Delete tasks effortlessly.
+- **Modern UI/UX**:
+    - Stunning, animated splash screen using Lottie.
+    - Clean and intuitive user interface.
+    - Support for both **Light and Dark themes**.
+- **State Management**: Scalable state management using `provider`.
+- **Declarative Routing**: Advanced navigation handled by `go_router`.
+- **Database**: Data persistence using an SQLite database managed by Prisma ORM.
+- **Clean Code**: Follows best practices with a clear separation of concerns (presentation, repository, services, state).
 
-To run this project locally, follow these steps:
+## 📸 Screenshots
 
-1.  **Clone the repository:**
+*(placeholder screenshots)*
 
-    ```bash
-    git clone https_github.com/your-username/flutter-task-app.git
-    ```
+| Splash Screen | Home (Light) | Home (Dark) |
+| :---: | :---: | :---: |
+| ![Splash Screen](https://i.imgur.com/72h2p1I.png) | ![Home Light](https://i.imgur.com/JPTg4c9.png) | ![Home Dark](https://i.imgur.com/mYvADJ8.png) |
 
-2.  **Install dependencies:**
 
-    ```bash
-    flutter pub get
-    ```
+## 🚀 Getting Started
 
-3.  **Run the app:**
+To get a local copy up and running, follow these simple steps.
 
-    ```bash
-    flutter run
-    ```
+### Prerequisites
 
-## Project Structure
+- [Flutter SDK](https://flutter.dev/docs/get-started/install)
+- [Node.js and npm](https://nodejs.org/en/download/)
 
-The project is organized into the following directories:
+### 1. Clone the Repository
 
--   `lib/models`: Contains the data models for the application.
--   `lib/presentation`: Contains the UI of the application, including screens and widgets.
--   `lib/repository`: Contains the repository for fetching and storing data.
--   `lib/services`: Contains the services for interacting with the backend API.
--   `lib/state`: Contains the state management logic for the application.
+```sh
+git clone https://github.com/pandashreyan/As-ment-mobile-.git
+cd As-ment-mobile-
+```
 
-## Dependencies
+### 2. Set Up the Backend
 
--   `flutter`: The core Flutter framework.
--   `provider`: For state management.
--   `go_router`: For navigation.
--   `http`: For making HTTP requests to the backend API.
--   `flutter_secure_storage`: for securely storing the auth token.
--   `google_fonts`: For custom fonts.
--   `lottie`: For animations.
+The backend server is required for the app to function correctly.
 
+```sh
+# Navigate to the backend directory
+cd backend
+
+# Install NPM packages
+npm install
+
+# Initialize Prisma (creates the SQLite database and generates the client)
+npx prisma db push
+
+# Start the server (usually on http://localhost:3000)
+npm start
+```
+
+### 3. Set Up the Flutter App
+
+```sh
+# Navigate back to the root directory
+cd ..
+
+# Install Flutter packages
+flutter pub get
+
+# Run the app on your connected device or emulator
+flutter run
+```
+
+## 📂 Project Structure
+
+The project is organized to promote scalability and maintainability.
+
+```
+.
+├── backend/            # Node.js (Express) + Prisma Backend
+│   ├── prisma/
+│   └── src/
+│       ├── routes/
+│       └── ...
+├── lib/                # Flutter Application Source
+│   ├── core/           # Core utilities (routing, theme)
+│   ├── models/         # Data models (e.g., Task)
+│   ├── presentation/   # UI Layer
+│   │   ├── screens/    # App screens
+│   │   └── widgets/    # Reusable widgets
+│   ├── repository/     # Data abstraction layer
+│   ├── services/       # External services (e.g., API client)
+│   └── state/          # State management (Providers)
+├── assets/             # Static assets (Lottie animations)
+└── pubspec.yaml        # Flutter dependencies
+```
+
+## 🛠️ Key Technologies & Packages
+
+### Frontend (Flutter)
+- **State Management**: `provider`
+- **Routing**: `go_router`
+- **HTTP Client**: `http`
+- **Secure Storage**: `flutter_secure_storage`
+- **Animations**: `lottie`
+- **Fonts**: `google_fonts`
+
+### Backend (Node.js)
+- **Framework**: `express`
+- **ORM**: `prisma`
+- **Authentication**: `jsonwebtoken`, `bcrypt`
+- **Database**: `sqlite`
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/pandashreyan/As-ment-mobile-/issues).
+
+## 📝 License
+
+This project is licensed under the MIT License - see the `LICENSE` file for details.
+
+---
+*This README was proudly generated by an AI assistant.*
