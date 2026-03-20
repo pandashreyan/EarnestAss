@@ -3,8 +3,8 @@
 A complete **Task Management System** built as part of a software engineering assessment.
 This project demonstrates both:
 
-✔ **Track A: Full-Stack Web Application (Next.js)**
-✔ **Track B: Mobile Application (Flutter)**
+✔ **Track A: Full-Stack Web Application **
+✔ **Track B: Mobile Application **
 
 Both applications share a **secure Node.js + TypeScript backend API** with JWT authentication and full CRUD functionality.
 
@@ -12,8 +12,8 @@ Both applications share a **secure Node.js + TypeScript backend API** with JWT a
 
 ## 🌐 Live Demo
 
-* **Web App (Next.js)**
-  👉 https://your-app.vercel.app
+* **Web App **
+  👉 https://aistudio.google.com/apps/ba39a984-dbc7-431c-aa20-428390bbe545?showPreview=true&showAssistant=true&fullscreenApplet=true
 
 * **Mobile App (Flutter APK)**
   👉 https://8686-firebase-easter-1773866441509.cluster-w5vd22whf5gmav2vgkomwtc4go.cloudworkstations.dev/emulator.html?embedded=0
