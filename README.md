@@ -17,10 +17,6 @@ Both applications share a **secure Node.js + TypeScript backend API** with JWT a
 
 * **Mobile App (Flutter APK)**
   👉 https://8686-firebase-easter-1773866441509.cluster-w5vd22whf5gmav2vgkomwtc4go.cloudworkstations.dev/emulator.html?embedded=0
-
-* **Backend API**
-  👉 https://your-backend.onrender.com
-
 ---
 
 ## 🧠 Project Overview
